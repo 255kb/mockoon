@@ -2,7 +2,6 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorHandler, NgModule, SecurityContext } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
-import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireRemoteConfigModule } from '@angular/fire/remote-config';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -86,7 +85,6 @@ import { DuplicateRouteModalComponent } from './components/move-route-modal/dupl
       }
     }),
     AngularFireModule.initializeApp(Config.firebaseConfig),
-    AngularFireAuthModule,
     AngularFireRemoteConfigModule,
     ReactiveFormsModule,
     NgxMaskModule.forRoot()
